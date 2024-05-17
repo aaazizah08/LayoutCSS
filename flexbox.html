@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* menjadi fleksibel dengan mengatur property display dengan nilai flex. */
+            display: flex;
+            background-color: #df7474;
+            flex-flow: row-reverse nowrap;
+            /* flex flow digunakan untuk menggabungkan flex-direction dan flex-wrap */
+            justify-content: flex-start;/* digunakan untuk mengatur content*/
+        }
+        .wadah_flex > div {
+            background-color: #dda0dd;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>Kesimpulan skenario 1 adalah :Jika program Css tidak diberi backgrond-color, 
+        maka hasilnya dalam satu baris hanya berupa angka 123 dengan background warna putih.
+        Akan tetapi, ketika diberi warna background-color misalnya warna merah muda maka dalam satu baris hasil tersebut
+        background akan berubah warna</p>
+    <p>Kesimpulan skenario 2 adalah :Style yang ditambahkan untuk setiap div anak dari class wadah-flex akan berpengaruh pada 
+        div yaitu membuat baris kotak sesuai div yang dibuat</p>
+    <p>Kesimpulan skenario 3 adalah :Flex direction <b>row</b> digunakan untuk menampilkan elemen div secara horizontal dalam satu baris.
+        flex direction <b>column</b> untuk menampilan elemen div secara vertikal dalam satu baris. flex direction row-reverse untk menampilkan elemen div sama seperti <b>row</b>
+        tetapi dalam urutan terbalik.</p>
+    <p>Kesimpulan skenario 4 adalah :Flex wrap hanya mempengaruhi item-item yang fleksibel misalnya dalam pengaturan margin. namun, jika elemen-elemen tersebut bukan item-item fleksibel
+        properti ini tidak berpengaruh. Flex-wrap untuk wrap reverse akan mengatur urutan dengan terbalik sehingga dari urutan bawah ke atas.</p>
+    <p>Kesimpulan skenario 5 adalah:Flex-flow untuk row-reverse nowrap akan mengurutkan baris dari urutan tertinggi ke terendah sedangkan, flex-flow untuk row wrap akan mengurutkan baris 
+        dari urutan terendah ke tertinggi</p>
+    <p>Kesimpulan skenario 6 adalah:Justify-content akan saling berkaitan dengan flex-flow. sedangkan, justify-content untuk flex-start akan mengatur item-item agar dimulai dari sisi kiri (atau awal) dari flex container.
+        Akan tetapi, ketika flex-flow dirutkan dari tertinggi ke terendah maka justify-content akan mengatur item-item agar dimulai dari kanan sesuai urutan awalnya.</p>
+</body>
+</html>

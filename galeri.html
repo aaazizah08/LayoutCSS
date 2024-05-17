@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        .galeri {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px;              /* Jarak antara foto */
+            max-width: 1400px;      /* Lebar maksimum galeri */
+            margin: 0 auto;         /* Posisi tengah horizontal */
+            padding: 20px 10px;     /* Ruang di sekitar galeri */
+        }
+
+        .galeri-item {
+            /* Ganti dengan dimensi (z) x (z) */
+            width: calc((var(--z) / 18) * 100%);
+            /* Aspek rasio gambar tetap terjaga */
+            aspect-ratio: 1/1;
+            /* Ganti dengan URL gambar yang sesuai  */
+            background-image: url('imag/foto1.jpg');
+            background-size: cover;
+            background-position: center;
+            /* Efek hover (opsional) */
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="galeri" style="--z: 18;">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <img src="gambar1.jpg" alt="Pemandangan">
+        <div class="galeri-item">1</div>
+        
+    </div>
+</body>
+</html>
